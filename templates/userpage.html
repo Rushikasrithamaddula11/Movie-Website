@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1C0F2F;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #1c0f2f;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #8457CE; /* Change color on hover */
+        }
+
+        /* User profile styles */
+        .user-profile {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-profile h2 {
+            margin-bottom: 15px;
+            color: #1C0F2F;
+        }
+
+        .user-info {
+            margin-bottom: 20px;
+        }
+
+        .user-info p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        /* Favorite movies styles */
+        .favorite-movies,
+        .next-playing {
+            margin-top: 20px;
+        }
+
+        .movie-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .movie-list li {
+            background-color: rgba(132, 87, 206, 0.2);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1c0f2f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newmovies.html">New Movies</a></li>
+            <li><a href="oldmovies.html">Old Movies</a></li>
+            <li><a href="ticketbooking.html">Ticket Booking</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="user-profile">
+        <h2>Profile Information</h2>
+        <div class="user-info">
+            <p><strong>Name:</strong> Sritha</p>
+            <p><strong>Place:</strong> Bhattiprolu, Bapatla</p>
+        </div>
+
+        <div class="favorite-movies">
+            <h3>Favorite Movies</h3>
+            <ul class="movie-list">
+                <li>Inception</li>
+                <li>The Dark Knight</li>
+                <li>Interstellar</li>
+                <li>Forrest Gump</li>
+                <li>The Shawshank Redemption</li>
+            </ul>
+        </div>
+
+        <div class="next-playing">
+            <h3>Next Playing Movies</h3>
+            <ul class="movie-list">
+                <li>Avatar: The Way of Water</li>
+                <li>Guardians of the Galaxy Vol. 3</li>
+                <li>Barbie</li>
+                <li>Oppenheimer</li>
+                <li>Killers of the Flower Moon</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Movie World. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

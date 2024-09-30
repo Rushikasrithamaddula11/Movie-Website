@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Movies</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #1C0F2F;
+            color: white;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #1C0F2F;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .movie {
+            flex: 1 1 calc(33.333% - 20px); /* Three cards per row, considering gaps */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .movie:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .movie img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .movie h3 {
+            margin-top: 10px;
+            color: #1C0F2F;
+        }
+
+        .movie p {
+            margin: 10px 0;
+        }
+
+        .movie button {
+            padding: 10px;
+            background-color: #8457CE;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .movie button:hover {
+            background-color: #653FA3;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .movie {
+                flex: 1 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .movie {
+                flex: 1 1 100%; /* Single card per row on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newmovies.html">New Movies</a></li>
+            <li><a href="oldmovies.html">Old Movies</a></li>
+            <li><a href="ticketbooking.html">Ticket Booking</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <h1>New Movies</h1>
+    <section>
+        <div class="movie-list">
+            <div class="movie">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.x_UO1oCZq4DmiHgoq2qJygHaFj&pid=Api&P=0&h=180.jpg" alt="Movie 4">
+                <h3>Movie Title 4</h3>
+                <p>Description of Movie 4.</p>
+                <button>Book Ticket</button>
+            </div>
+            <div class="movie">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.x_UO1oCZq4DmiHgoq2qJygHaFj&pid=Api&P=0&h=180.jpg" alt="Movie 4">
+                <h3>Movie Title 6</h3>
+                <p>Description of Movie 4.</p>
+                <button>Book Ticket</button>
+            </div>
+            <div class="movie">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.x_UO1oCZq4DmiHgoq2qJygHaFj&pid=Api&P=0&h=180.jpg" alt="Movie 4">
+                <h3>Movie Title 7</h3>
+                <p>Description of Movie 4.</p>
+                <button>Book Ticket</button>
+            </div>
+            <div class="movie">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.x_UO1oCZq4DmiHgoq2qJygHaFj&pid=Api&P=0&h=180.jpg" alt="Movie 4">
+                <h3>Movie Title 8</h3>
+                <p>Description of Movie 4.</p>
+                <button>Book Ticket</button>
+            </div>
+            <div class="movie">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.x_UO1oCZq4DmiHgoq2qJygHaFj&pid=Api&P=0&h=180.jpg" alt="Movie 4">
+                <h3>Movie Title 9</h3>
+                <p>Description of Movie 4.</p>
+                <button>Book Ticket</button>
+            </div>
+            <div class="movie">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.x_UO1oCZq4DmiHgoq2qJygHaFj&pid=Api&P=0&h=180.jpg" alt="Movie 4">
+                <h3>Movie Title 10</h3>
+                <p>Description of Movie 4.</p>
+                <button>Book Ticket</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

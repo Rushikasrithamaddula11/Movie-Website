@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie World</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1C0F2F;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #1c0f2f;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #8457CE; /* Change color on hover */
+        }
+
+        /* Login & Signup buttons */
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            padding: 10px 20px;
+            background-color: #8457CE;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .auth-buttons a:hover {
+            background-color: #653FA3; /* Darken button color on hover */
+        }
+
+        /* Hero section styles */
+        #hero {
+            background: linear-gradient(to right, rgba(28, 15, 47, 0.9), rgba(132, 87, 206, 0.9)), url('https://example.com/movie-banner.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        #hero button {
+            padding: 10px 20px;
+            background-color: #8457CE;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #hero button:hover {
+            background-color: #653FA3; /* Darken button color on hover */
+        }
+
+        /* User page section */
+        #user-page {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #user-page h2 {
+            font-size: 2em;
+            color: #1C0F2F;
+            margin-bottom: 20px;
+        }
+
+        #user-page p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        #user-page a {
+            padding: 10px 20px;
+            background-color: #8457CE;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #user-page a:hover {
+            background-color: #653FA3;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1c0f2f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie World</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newmovies.html">New Movies</a></li>
+            <li><a href="oldmovies.html">Old Movies</a></li>
+            <li><a href="ticketbooking.html">Ticket Booking</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <h2>Welcome to Movie World</h2>
+        <p>Your ultimate destination for all things movies. Explore the latest releases, classic films, and book tickets for your favorite shows.</p>
+        <button onclick="window.location.href='explore movies.html'">Explore Now</button>
+    </section>
+
+    <section id="user-page">
+        <h2>User Page</h2>
+        <p>Manage your account, view your movie history, and update preferences here.</p>
+        <a href="userpage.html">Go to User Page</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Movie World. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

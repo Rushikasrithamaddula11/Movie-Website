@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Movies</title>
+    <style>
+        /* CSS for the Old Movies page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3E2071; /* Background color for the entire page */
+            color: white;
+        }
+
+        /* Navigation bar styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #653FA3; /* Navigation background */
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            background-color: #8457CE; /* Hover effect for navigation links */
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #oldmovie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .oldmovie-card {
+            background-color: rgba(60, 40, 90, 0.7); /* Card background */
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            flex: 1 0 30%; /* Flexible card sizing */
+            color: white;
+        }
+
+        .oldmovie-card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .oldmovie-title {
+            font-size: 1.1em;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newmovies.html">New Movies</a></li>
+            <li><a href="oldmovies.html">Old Movies</a></li>
+            <li><a href="ticketbooking.html">Ticket Booking</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Old Movies</h2>
+        <div id="oldmovie-container">
+            <div class="old-movie-card">
+                <img src="movie1.jpg" alt="Movie 1">
+                <div class="old-movie-title">Movie Title 1</div>
+            </div>
+            <div class="oldmovie-card">
+                <img src="movie2.jpg" alt="Movie 2">
+                <div class="old-movie-title">Movie Title 2</div>
+            </div>
+            <div class="oldmovie-card">
+                <img src="movie3.jpg" alt="Movie 3">
+                <div class="old-movie-title">Movie Title 3</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

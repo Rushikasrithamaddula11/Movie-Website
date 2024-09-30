@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Movies</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #1c0f2f;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8457CE;
+        }
+
+        /* Explore Movies section */
+        #explore-movies {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #explore-movies h2 {
+            font-size: 2.5em;
+            color: #1C0F2F;
+            margin-bottom: 40px;
+        }
+
+        /* Movies grid */
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 50px;
+        }
+
+        .movie-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card h3 {
+            font-size: 1.5em;
+            color: #333;
+            padding: 15px 10px;
+        }
+
+        .movie-card p {
+            font-size: 1em;
+            color: #555;
+            padding: 0 10px 20px 10px;
+        }
+
+        .movie-card button {
+            display: block;
+            width: 80%;
+            margin: 10px auto 20px auto;
+            padding: 10px;
+            background-color: #8457CE;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .movie-card button:hover {
+            background-color: #653FA3;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1c0f2f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #explore-movies h2 {
+                font-size: 2em;
+            }
+
+            .movie-card h3 {
+                font-size: 1.2em;
+            }
+
+            .movies-grid {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newmovies.html">New Movies</a></li>
+            <li><a href="oldmovies.html">Old Movies</a></li>
+            <li><a href="ticketbooking.html">Ticket Booking</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Explore Movies Section -->
+    <section id="explore-movies">
+        <h2>Explore Movies</h2>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/250x350" alt="Movie Poster 1">
+                <h3>Movie Title 1</h3>
+                <p>Genre: Action | Release Date: 2024-09-15</p>
+                <button>View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/250x350" alt="Movie Poster 2">
+                <h3>Movie Title 2</h3>
+                <p>Genre: Drama | Release Date: 2024-08-10</p>
+                <button>View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/250x350" alt="Movie Poster 3">
+                <h3>Movie Title 3</h3>
+                <p>Genre: Sci-Fi | Release Date: 2024-07-20</p>
+                <button>View Details</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/250x350" alt="Movie Poster 4">
+                <h3>Movie Title 4</h3>
+                <p>Genre: Thriller | Release Date: 2024-10-05</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Movie World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
